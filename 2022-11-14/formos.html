@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formos</title>
+</head>
+<body>
+    <form action="https://google.com">
+        <div>
+        <label>Jūsų vardas:</label>
+        <input type="text" placeholder="Vardenis Pavardenis" required>
+    </div>
+    <div>
+        <label>Jūsų el. pašto adresas:</label>
+        <input type="email" placeholder="info@bit.lt" required>
+    </div>
+    <div>
+        <label>Slaptažodis:</label>
+        <input type="password" placeholder="" required>
+    </div>
+    <div>
+        <label>Data:</label>
+        <input type="date" placeholder="" required>
+    </div>
+    <div>
+        <label>Mėgstamiausia spalva:</label>
+        <input type="color" placeholder="" required>
+    </div>
+    <div>
+        <label>Jūsų nuotrauka:</label>
+        <input type="file" required>
+    </div>
+    <div>
+        <label>Jūsų amžius:</label>
+        <input type="number" min="13" max="150" value="99" required>
+    </div>
+    <div>
+       <!-- <input type="checkbox"> Sutinku  su taisyklėmis</label>  --> <label> 
+        <label for="terms_and_conditions">Sutinku su taisyklėmis</label>
+        <input id="terms_and_conditions" type="checkbox">
+    </div>
+    <div>
+        <label> 
+             <input type="radio" name="produktas">
+             Grybai
+        </label>
+        <label> 
+            <input type="radio" name="produktas">
+            Uogos
+       </label>
+       <label> 
+        <input type="radio" name="produktas">
+        Vaisiai
+   </label>
+    </div>
+    <div>
+        <select name="" id="">
+            <option value="1">Grybai</option>
+            <option value="2">Vaisiai</option>
+            <option value="3">Uogos</option>
+        </select>
+    </div>
+    <div>
+        <select multiple>
+            <option value="1">Grybai</option>
+            <option value="2">Vaisiai</option>
+            <option value="3">Uogos</option>
+        </select>
+    </div>
+    <div>
+        <label>Jūsų komentaras:<br>
+                      <textarea>kažkoks komentaras</textarea> 
+        </label>
+
+    </div>
+ 
+    <input type="reset" value="Išvalyti">
+        <button type="submit">siųsti</button>
+    </form>
+    
+</body>
+</html>

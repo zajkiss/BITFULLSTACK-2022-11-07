@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Užsakymo forma</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+        .pagrindinis{
+            background-color: rgb(245,245,245);
+            margin: auto;
+            width: 50%;
+            height: 600px;
+            border: 1px solid rgb(238,238,238);
+
+        }
+
+        .vidinis{
+            background-color: rgb(245,245,245);
+            margin: auto;
+            width: 95%;
+            height: 200px;
+            border: 1px solid rgb(238,238,238);
+            display: flex;
+            border-right-style: none;
+            border-left-style: none;
+            border-bottom-style: none;
+        }
+        .vidinis2{
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+        .vidinis3{
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+        .box1{
+            background-color: white;
+            width: 33%;
+            height: 150px;
+            border: 1px solid rgb(238,238,238);
+            margin-right: 10px;
+            margin-top: 15px;
+        }
+        .box2{
+            background-color: white;
+            width: 33%;
+            height: 150px;
+            margin-top: 15px;
+            padding-left: 3px;
+            border: 1px solid rgb(238,238,238);
+            margin-right: 10px;
+            
+
+        }
+        .box3{
+            background-color: white;
+            width: 33%;
+            height: 150px;
+            margin-top: 15px;
+            border: 1px solid rgb(238,238,238);
+        }
+        h4{
+            margin-left:30px ;
+        }
+        
+        .line-break {
+        width: 100%;
+        height: 0px;
+    }
+.radio{
+    text-align: center;
+}
+.radio_dydis{
+    width: 1.5em; height: 1.5em;
+}
+.logo{
+    text-align: center;
+}
+.forma{
+    display: flex;
+}
+.pasirinkimas1{
+    width: 50%;
+    margin-right: 5px;
+}
+.pasirinkimas2{
+    width: 50%;
+    margin-left: 5px;
+}
+select{
+    width: 100%;
+    height: 30px;
+}
+.vardas{
+    width: 100%;
+    height: 30px;
+}
+.pavarde{
+    width: 100%;
+    height: 30px;
+}
+.numeris{
+    width: 50%;
+    height: 30px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="pagrindinis"> 
+        <h4>Pristatymas į paštomatus</h4>
+            <div class="vidinis">    
+                <div class="box1">
+                    <div class="radio">
+                        <input type="radio"  class="radio_dydis" >
+                        <div class="logo"><img src="lpxpress-logo.png" alt="Girl in a jacket" width="100" height="50"></div>
+                        <div class="atsiemimas"><h6 style="margin-top: 0px;margin-bottom: 0px;">Atsiėmimas LP EXPRESS paštomate</h6></div>
+                        <div style="font-size: 10px; margin-top: 10px; ">2-4 darbo dienos</div>
+                        <div><h5 style="margin-top: 5px;">1,99€</h5></div>
+                        <p class="break"></p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="radio">
+                        <input type="radio"  class="radio_dydis" >
+                        <div class="logo"><img src="omniva-logo.png" alt="Girl in a jacket" width="100" height="30" style="margin-top: 10px;" ></div>
+                        <div class="atsiemimas"><h6 style="margin-top: 10px;margin-bottom: 0px;">Atsiėmimas Omniva paštomate</h6></div>
+                        <div style="font-size: 10px; margin-top: 10px; ">2-4 darbo dienos</div>
+                        <div><h5 style="margin-top: 5px;">1,99€</5></div>
+                           
+                    </div>
+                </div>
+                <div class="box3">
+                    <div class="radio">
+                        <input type="radio"  class="radio_dydis">
+                        <div class="logo"><img src="DPD-logotipas.svg" alt="Girl in a jacket" width="100" height="30" style="margin-top: 10px;"></div>
+                        <div class="atsiemimas"><h6 style="margin-top: 10px;margin-bottom: 0px;">Atsiėmimas paštomate</h6></div>
+                        <div style="font-size: 10px; margin-top: 10px;">2-4 darbo dienods</div>
+                        <div><h5 style="margin-top: 5px;">1,99€</h5></div>
+                        
+                    </div>  
+                    </div>  
+                    
+            </div> 
+            <div class="vidinis2">
+                <h5 style="margin-top: 0px;margin-bottom: 0px; padding-bottom: 5px;">Pasirinkite pristatymo vietą</h5>
+                <form action="/action_page.php" class="forma">
+                    <div class="pasirinkimas1">
+                <label for="miestas" style="font-size:11px ;" >Miestas<span style="color: red">*</span></label>
+                <select class="miestas" style="margin-top: 10px;"id="miestas">
+                    <option>Small select</option>
+                  </select>
+                </div>
+                <div class="pasirinkimas2">
+                  <label for="pastomatas" style="font-size:11px ;">Paštomatas<span style="color: red">*</span></label>
+                <select class="pastomatas" style="margin-top: 10px;" id="pastomatas">
+                    <option>Small select</option>
+                  </select>
+                </div>
+               </form>
+
+          
+            </div>
+            <div class="vidinis3">
+                <h5>Pateikite gavėjo duomenis</h5>
+                <form class="forma">
+                <div class="pasirinkimas1">
+                    <label for="vardas" style="font-size:11px ; " >Vardas<span style="color: red">*</span></label>
+                    <input type="text" class="vardas" placeholder="Vardenis" style="margin-top: 10px; margin-bottom: 10px;">
+                    </div>
+                <div class="pasirinkimas2">
+                    <label for="pavarde" style="font-size:11px ;" >Pavardę<span style="color: red">*</span></label>
+                    <input type="text" class="pavarde" placeholder="Pavardenis" style="margin-top: 10px;">
+
+                </div>
+                </form>
+                <label for="pavarde" style="font-size:11px ;" >Mobilaus telefono numeris<span style="color: red">*</span></label><br>
+                    <input type="number" class="numeris" placeholder="+3706000000" style="margin-top: 10px;">
+
+
+
+
+
+            </div>
+    </div>
+
+</body>
+</html>

@@ -11,7 +11,7 @@
             background-color: rgb(245,245,245);
             margin: auto;
             width: 50%;
-            height: 600px;
+            height: auto;
             border: 1px solid rgb(238,238,238);
 
         }
@@ -19,13 +19,17 @@
         .vidinis{
             background-color: rgb(245,245,245);
             margin: auto;
-            width: 95%;
-            height: 200px;
+            width: 100%;
+            padding: 0 20px;
+            gap: 15px;
+            /* height: 200px; */
             border: 1px solid rgb(238,238,238);
             display: flex;
+            flex-wrap: wrap;
             border-right-style: none;
             border-left-style: none;
             border-bottom-style: none;
+            box-sizing: border-box;
         }
         .vidinis2{
             padding-right: 30px;
@@ -35,31 +39,19 @@
             padding-right: 30px;
             padding-left: 30px;
         }
-        .box1{
+        .box {
             background-color: white;
-            width: 33%;
+            width: calc(33.33333% - 15px);
             height: 150px;
             border: 1px solid rgb(238,238,238);
-            margin-right: 10px;
             margin-top: 15px;
+            box-sizing: border-box;
         }
         .box2{
-            background-color: white;
-            width: 33%;
-            height: 150px;
-            margin-top: 15px;
             padding-left: 3px;
-            border: 1px solid rgb(238,238,238);
-            margin-right: 10px;
-            
-
         }
-        .box3{
-            background-color: white;
-            width: 33%;
-            height: 150px;
-            margin-top: 15px;
-            border: 1px solid rgb(238,238,238);
+        .box4 {
+            width: 100%;
         }
         h4{
             margin-left:30px ;
@@ -111,39 +103,51 @@ select{
 <body>
     <div class="pagrindinis"> 
         <h4>Pristatymas į paštomatus</h4>
-            <div class="vidinis">    
-                <div class="box1">
-                    <div class="radio">
-                        <input type="radio"  class="radio_dydis" >
-                        <div class="logo"><img src="lpxpress-logo.png" alt="Girl in a jacket" width="100" height="50"></div>
-                        <div class="atsiemimas"><h6 style="margin-top: 0px;margin-bottom: 0px;">Atsiėmimas LP EXPRESS paštomate</h6></div>
-                        <div style="font-size: 10px; margin-top: 10px; ">2-4 darbo dienos</div>
-                        <div><h5 style="margin-top: 5px;">1,99€</h5></div>
-                        <p class="break"></p>
-                    </div>
-                </div>
-                <div class="box2">
-                    <div class="radio">
-                        <input type="radio"  class="radio_dydis" >
-                        <div class="logo"><img src="omniva-logo.png" alt="Girl in a jacket" width="100" height="30" style="margin-top: 10px;" ></div>
-                        <div class="atsiemimas"><h6 style="margin-top: 10px;margin-bottom: 0px;">Atsiėmimas Omniva paštomate</h6></div>
-                        <div style="font-size: 10px; margin-top: 10px; ">2-4 darbo dienos</div>
-                        <div><h5 style="margin-top: 5px;">1,99€</5></div>
-                           
-                    </div>
-                </div>
-                <div class="box3">
-                    <div class="radio">
-                        <input type="radio"  class="radio_dydis">
-                        <div class="logo"><img src="DPD-logotipas.svg" alt="Girl in a jacket" width="100" height="30" style="margin-top: 10px;"></div>
-                        <div class="atsiemimas"><h6 style="margin-top: 10px;margin-bottom: 0px;">Atsiėmimas paštomate</h6></div>
-                        <div style="font-size: 10px; margin-top: 10px;">2-4 darbo dienods</div>
-                        <div><h5 style="margin-top: 5px;">1,99€</h5></div>
-                        
-                    </div>  
-                    </div>  
+            <form>
+                <div class="vidinis">
                     
-            </div> 
+                    <div class="box box1">
+                        <div class="radio">
+                            <input type="radio" name="shipping" class="radio_dydis" >
+                            <div class="logo"><img src="lpxpress-logo.png" alt="Girl in a jacket" width="100" height="50"></div>
+                            <div class="atsiemimas"><h6 style="margin-top: 0px;margin-bottom: 0px;">Atsiėmimas LP EXPRESS paštomate</h6></div>
+                            <div style="font-size: 10px; margin-top: 10px; ">2-4 darbo dienos</div>
+                            <div><h5 style="margin-top: 5px;">1,99€</h5></div>
+                            <p class="break"></p>
+                        </div>
+                    </div>
+                    <div class="box box2">
+                        <div class="radio">
+                            <input type="radio" name="shipping" class="radio_dydis" >
+                            <div class="logo"><img src="omniva-logo.png" alt="Girl in a jacket" width="100" height="30" style="margin-top: 10px;" ></div>
+                            <div class="atsiemimas"><h6 style="margin-top: 10px;margin-bottom: 0px;">Atsiėmimas Omniva paštomate</h6></div>
+                            <div style="font-size: 10px; margin-top: 10px; ">2-4 darbo dienos</div>
+                            <div><h5 style="margin-top: 5px;">1,99€</5></div>
+                            
+                        </div>
+                    </div>
+                    <div class="box box3">
+                        <div class="radio">
+                            <input type="radio" name="shipping" class="radio_dydis">
+                            <div class="logo"><img src="DPD-logotipas.svg" alt="Girl in a jacket" width="100" height="30" style="margin-top: 10px;"></div>
+                            <div class="atsiemimas"><h6 style="margin-top: 10px;margin-bottom: 0px;">Atsiėmimas paštomate</h6></div>
+                            <div style="font-size: 10px; margin-top: 10px;">2-4 darbo dienods</div>
+                            <div><h5 style="margin-top: 5px;">1,99€</h5></div>
+                            
+                        </div>  
+                    </div>  
+                    <div class="box box4">
+                        <div class="radio">
+                            <input type="radio" name="shipping" class="radio_dydis">
+                            <div class="logo"><img src="DPD-logotipas.svg" alt="Girl in a jacket" width="100" height="30" style="margin-top: 10px;"></div>
+                            <div class="atsiemimas"><h6 style="margin-top: 10px;margin-bottom: 0px;">Atsiėmimas paštomate</h6></div>
+                            <div style="font-size: 10px; margin-top: 10px;">2-4 darbo dienods</div>
+                            <div><h5 style="margin-top: 5px;">1,99€</h5></div>
+                            
+                        </div>  
+                    </div>  
+                </div> 
+             </form>
             <div class="vidinis2">
                 <h5 style="margin-top: 0px;margin-bottom: 0px; padding-bottom: 5px;">Pasirinkite pristatymo vietą</h5>
                 <form action="/action_page.php" class="forma">

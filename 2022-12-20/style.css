@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;600&family=Kanit&family=Montserrat:wght@200&family=Roboto&display=swap');
+        .container{
+            display: none;
+            width: 372px;
+            height: auto;
+            margin: auto;
+            background-color: #f1f1f1;
+            margin-top:10px;
+        }
+        .header{
+            width: 100%;
+            height: 238px;
+            padding: 0px;
+            background-image:url("images/rbg.jpg") ;
+        }
+        .header img{
+         display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%; 
+        padding: 40px;
+        border-radius: 45%;
+        padding-bottom: 0px;
+        }
+        p {
+    text-align:center;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size:large;
+}
+.phone, .email, .website, .city{
+    display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:10px;
+        border-radius: 15px;
+            height: 50px;
+    width: 352px;
+    background-color: #ffffff;
+
+}
+.phone img{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.email img{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.website img{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.city img{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.iconos{
+    padding-top: 20px;
+    padding-left: 40px;
+}
+label{
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: red;
+}
+.sarasas{
+    display: none;
+    width: auto;
+            height:auto;
+            margin-top:10px;
+            text-align: center;
+            border-radius: 25px;
+            background-color: #f1f1f1;
+}
+.flexas{
+    display: flex;;
+}

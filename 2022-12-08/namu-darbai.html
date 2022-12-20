@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namų darbai 2022-12-08</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <input type="button" id="one" onclick="Paslėpti();" value="Užduotys1">
+    <input type="button"  id="two" onclick="location.reload();" value="Užduotys2" style="display: none;">
+    <div class="užduotys" id="užduotys"  style="display: none;" ><p>1.Kazys ir Petras žaidžiai šaškėm. Petras surenka taškų kiekį nuo 10 iki 20, Kazys surenka taškų kiekį nuo 5 iki 25. Vienoje eilutėje išvesti žaidėjų vardus su taškų kiekiu ir “Partiją laimėjo: ​laimėtojo vardas​”. Taškų kiekį generuokite funkcija ​rand()​. Žaidimą laimi tas, kas greičiau surenka 222 taškus. Partijas kartoti tol, kol kažkuris žaidėjas pirmas surenka 222 arba daugiau taškų.</p>
+    <p>2.Sumodeliuokite vinies kalimą. Įkalimo gylį sumodeliuokite pasinaudodami rand() funkcija. Vinies ilgis 8.5cm (pilnai sulenda į lentą).
+        “Įkalkite” 5 vinis mažais smūgiais. Vienas smūgis vinį įkala 5-20 mm. Suskaičiuokite kiek reikia smūgių.
+        “Įkalkite” 5 vinis dideliais smūgiais. Vienas smūgis vinį įkala 20-30 mm, bet yra 50% tikimybė (pasinaudokite rand() funkcija tikimybei sumodeliuoti), kad smūgis nepataikys į vinį. Suskaičiuokite kiek reikia smūgių.
+        </p>
+        <p>3.Sugeneruokite stringą, kurį sudarytų 50 atsitiktinių skaičių nuo 1 iki 200, atskirtų tarpais. Skaičiai turi būti unikalūs (t.y. nesikartoti). Sugeneruokite antrą stringą, pasinaudodami pirmu, palikdami jame tik pirminius skaičius (t.y tokius, kurie dalinasi be liekanos tik iš 1 ir patys savęs). Skaičius stringe sudėliokite didėjimo tvarka, nuo mažiausio iki didžiausio.
+        </p>
+    
+    </div>
+    <div>
+        <h3>Pirma užduotis</h3>
+        <input type="button" id="pirma"onclick="Šaškės();" value="Pradėti Petro ir Kazio žaidimą">
+        <p id="saskes"></p>
+    </div>
+    <div>
+        <h3>Antra užduotis</h3>
+        <input type="button" id="pirma"onclick="ViniesKalimasM();" value="Kalti 5 vinis MAŽAIS smūgiais">
+        <input type="button" id="pirma"onclick="ViniesKalimasD();" value="Kalti 5 vinis DIDELIAIS smūgiais">
+        <p id="vinis"></p>
+        <p id="vinis1"></p>
+    </div>
+    <div>
+        <h3>Trečia užduotis</h3>
+        <input type="button" id="pirma"onclick="Stringas();" value="50 Atsitiktinių skaičiu (unique)">
+        <p id="stringas"></p>
+        <p id="stringas2"></p>
+    </div>
+</body>
+</html>

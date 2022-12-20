@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namu darbai</title>
+    <script src="script.js"></script>
+</head>
+<body>
+<div>
+    <h3>Pirma užduotis</h3>
+    <label> įveskite vardą</label>
+    <input type="text" id="name" class="name"> 
+    <input type="button" onclick="GautiVardaPasisveikinimui(document.getElementById('name').value);" value="patvirtinti">
+    <label id="pasisveikinimas"></label>
+</div>
+<div>
+    <h2>Antra užduotis</h2>
+    <label>įveskite tekstą</label>
+    <input type="text" id="tekstas">
+    <input type="button" onclick="GautiTeksta(document.getElementById('tekstas').value);" value="patvirtinti">
+    <label id="simbkiekis"></label>
+
+</div>
+<div>
+    <h2>Trečia užduotis</h2>
+    <label>įveskite savo vardą ir pavardę (mažosiomis raidėmis)</label>
+    <input type="text" id="vardenis" placeholder="vardenis pavardenis">
+    <input type="button" onclick="GautiVarda(document.getElementById('vardenis').value);" value="patvirtinti">
+    <label id="VPavarde"></label>
+
+</div>
+</body>
+</html>

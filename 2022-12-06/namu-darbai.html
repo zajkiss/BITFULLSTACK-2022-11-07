@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namu darbai</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="PaslėptiElementą();">
+    <div class="container1">
+        <h3>Pirma ir Antra užduotys</h3>
+        <input type="button" id="kmygtukas1" onclick="Kvadratas();" value="Sukurti kvadratą 100x100 su raudonomis istrižainėmis">
+        <input type="button" id="kmygtukas2" class="kmygtukas2" onclick="PaslėptiKvadratą();" value="Uždaryti" visibility="hidden">
+
+        <p id="kvadratas"></p>
+    </div>
+    <div class="container2">
+        <h3>Trečia užduotis</h3>
+        <input type="button" id="mmygtukas1" onclick="MonetosMetimas();" value="Mesti monetą">
+        <p id="moneta1"></p>
+        <p id="moneta2"></p>
+    </div>
+    <div class="container3">
+        <h3>Ketvirta užduotis</h3>
+        <input type="button" id="masmygtukas1" onclick="Masyvas();" value="Kurti masyvą">
+        <p id="masyvas1"></p>
+        <p id="masyvas2"></p>
+    </div>
+    <div class="container4">
+        <h3>Penkta užduotis</h3>
+        <input type="button" id="masmygtukas1" onclick="DidesniUz10();" value="Kiek masyve skaičių didesnių nei 10?">
+        <p id="masyveks"></p>
+        <p id="masyveks2"></p>
+    </div>
+
+    
+     
+</body>
+</html>

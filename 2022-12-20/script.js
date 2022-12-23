@@ -122,8 +122,7 @@ function removeObjectWithId(arr, id) {
   
     return arr;
   }
-const PirmaUzduotis = (name) =>{
-    let kazkas = name;
+const PirmaUzduotis = () =>{
     console.log("labas");
 
     document.getElementById("container").style="display:block";
@@ -228,7 +227,8 @@ function doStuff(target){
         product.miestas = naujas_miestas;
         PirmaUzduotis();
     }
-    if(product.foto === target){
+    //paveikslelis nesikeicia
+    if(product.foto == target){
         let nauja_lytis = prompt("Įveskite naują Lyti", target);
         product.foto = nauja_lytis;
         PirmaUzduotis();
@@ -240,7 +240,7 @@ function doStuff(target){
 
 const RodytiVizitine = (name) => {
     //const resultatas = data.find(({ vardas }) => vardas === 'Augustė Augustinaitė');
-    console.log(name);
+   // console.log(name);
     let resultatas1 = '';
     data.map(product => {if(product.vardas === name){
         resultatas1 += `

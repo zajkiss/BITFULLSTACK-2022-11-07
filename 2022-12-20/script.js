@@ -227,7 +227,7 @@ function doStuff(target){
         product.miestas = naujas_miestas;
         PirmaUzduotis();
     }
-    //paveikslelis nesikeicia
+    //paveikslelis nesikeicia 
     if(product.foto == target){
         let nauja_lytis = prompt("Įveskite naują Lyti", target);
         product.foto = nauja_lytis;

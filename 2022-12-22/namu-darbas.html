@@ -27,15 +27,14 @@
 
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
-  <form action="" method="get">
+  <form onsubmit="validacija(event)">
     <div class="form-group row">
       <div class="col-5"></div>
-      <div class="col-2 lentele">
-        <label>Vardas</label>
-        <input type="text" class="form-control" id="validationServer01" placeholder="Vardas" oninput="myFunction()" >
-        <div class="sekmingas_vardas" style="display:none">
-          <label style="color:rgb(7, 90, 7);">Puiku!</label>
-        </div>
+      <div class="col-2 lentele ">
+        
+        <label for="validationServer01" class="form-label">Vardas</label>
+        <input type="text" class="form-control input-group" id="validationServer01" placeholder="Vardas" value="Mark" oninput="" required>
+
         <div class="tuscias_vardas" style="display:none">
           <label style="color:red;">Laukas tusčias!</label>
         </div>
@@ -55,8 +54,9 @@
           <div class="sekmingas_email" style="display:none">
             <label style="color:rgb(7, 90, 7);">Nuostabu!</label>
           </div>
-          <div class="sekmingas_email" style="display:none">
-            <label style="color:rgb(246, 255, 0);">Neteisingai įvestas el.pašto adresas.</label>
+          <div class="neteisingas_el" style="display:none">
+            <label style="color:blue">neteisingai įvestas el.pašto adresas!</label>
+
           </div>
             <label>Žinutė</label>
             <textarea class="form-control" id="validationServer04" rows="3" oninput="myFunction()"></textarea>
@@ -66,10 +66,26 @@
             <div class="nepilnas_text" style="display:none">
               <label style="color:red;">Nepilnai užpildyta!(Min. 15 simbolių)</label>
             </div>
-            <input class="btn btn-primary patvirtinimas" type="button" onclick="validacija()" value="Patvirtinti">
+            <input class="btn btn-primary patvirtinimas" type="submit" value="Patvirtinti">
       </div>
       </div>
   </form>
-  
+  <form onsubmit="krepselis(event)" class="forma">
+  <input type="text" class="prekes"><input type="number" class="kiekis"><input type="submit"  value="ENTER!">
+  </form>
+  <table class="table">
+    <thead>
+        <tr> 
+            <th>Prekė</th>
+            <th>kiekis</th>
+            <th>veiksmai</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+
+
 </body>
 </html>

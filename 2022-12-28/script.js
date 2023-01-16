@@ -41,7 +41,7 @@ timer = setInterval(function(){ // sukuriam funcija kuri kartosis kas 1s.
 
    
     
-    paspaudimai.addEventListener("click", function(){ paspaustas = true;; });  // paspaudus ant kvadrato priskiriama reikšmė, jog kvadratas paspaustas
+    paspaudimai.addEventListener("click", function(){ paspaustas = true; });  // paspaudus ant kvadrato priskiriama reikšmė, jog kvadratas paspaustas
 
     if(paspaustas === true) // tikriname ar kvadratas paspaustas, jei paspaustas pliusuojam žaidėjo taškus, jei ne - kompiuterio taškus. 
     {

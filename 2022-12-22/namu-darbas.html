@@ -33,8 +33,10 @@
       <div class="col-2 lentele ">
         
         <label for="validationServer01" class="form-label">Vardas</label>
-        <input type="text" class="form-control input-group" id="validationServer01" placeholder="Vardas" value="Mark" oninput="" required>
-
+        <input type="text" class="form-control input-group" id="validationServer01" placeholder="Vardas" value="Mark" oninput="myFunction()" required>
+        <div class="tuscias_vardas" style="display:none">
+          <label style="color:red;">Laukas tusčias!</label>
+        </div>
         <div class="tuscias_vardas" style="display:none">
           <label style="color:red;">Laukas tusčias!</label>
         </div>
@@ -70,20 +72,6 @@
       </div>
       </div>
   </form>
-  <form onsubmit="krepselis(event)" class="forma">
-  <input type="text" class="prekes"><input type="number" class="kiekis"><input type="submit"  value="ENTER!">
-  </form>
-  <table class="table">
-    <thead>
-        <tr> 
-            <th>Prekė</th>
-            <th>kiekis</th>
-            <th>veiksmai</th>
-        </tr>
-    </thead>
-    <tbody>
-    </tbody>
-</table>
 
 
 

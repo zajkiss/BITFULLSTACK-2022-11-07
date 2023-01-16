@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap');
+.postas{
+    margin: auto;
+    flex: 0 0 300px; /* play with this number */
+    height: 500px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.postas img{
+    position:absolute;
+
+}
+.kategorija{
+    z-index:100;
+    position:absolute;  
+    background-color: black;  
+    color:white;
+    font-size:24px;
+    font-family: 'Carrois Gothic SC', sans-serif;
+}
+.data{
+    position: relative;
+    top: 200px;
+}
+.pavadinimas{
+    width: 200px;
+    position: relative;
+    top: 200px;
+    font-size:19px;
+    font-weight: bold;
+}
+.kontentas{
+    width: 200px;
+    position: relative;
+    top: 200px;
+    font-size:12px;
+}
+.postas a{
+    width: 200px;
+    position: relative;
+    top: 200px;
+    font-size:12px;
+
+}

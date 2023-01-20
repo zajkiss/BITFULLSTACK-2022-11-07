@@ -23,6 +23,7 @@ if(propsas.name === 'suma'){
   setSuma(+propsas.value)
   setPvm((+propsas.value /100)*tarifas)
   setPvmS(+propsas.value+((+propsas.value/100)*tarifas))
+  console.log(propsas.value+((+propsas.value/100)*tarifas))
 }
 }
 const pasirinktiTarifa = (procentas) =>{

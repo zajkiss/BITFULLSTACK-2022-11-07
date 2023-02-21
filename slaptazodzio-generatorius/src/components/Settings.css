@@ -1,0 +1,28 @@
+
+.generate-settings-fieldset {
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: auto;
+  width: 60%;
+
+
+}
+legend{
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+.generate-setting-span{
+    display: inline-block !important;
+    width: 275px !important;
+    font-size: 16px;
+}
+.generate-setting-span fieldval{
+    width: 50px !important;
+    clear: both; height: 0px;
+}

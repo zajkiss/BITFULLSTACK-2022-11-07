@@ -13,6 +13,17 @@ class ProductsController extends Controller
     return $data;
    }
 
+   public function search($keyword){
+      try{
+       return  Products::where('name', 'LIKE', '%'.$keyword.'%')
+       ->orWhere(['sku' => $keyword])->get();
+
+       
+      }catch(\Exception $e) {
+         return response('Nepavyko rasti produkto', 500);
+      }
+   }
+
    public function create(Request $request) {
       try {
 

@@ -26,6 +26,7 @@ use App\Http\Controllers\ProductsController;
 
 Route::group(['prefix'=>'products'],function(){
     Route::get('/', [ProductsController::class, 'index']);
+    Route::get('/s/{keyword}', [ProductsController::class, 'search']);
     Route::post('/', [ProductsController::class, 'create']);
     Route::put('/{id}', [ProductsController::class, 'edit']);
     Route::get('/{id}', [ProductsController::class, 'result']);
